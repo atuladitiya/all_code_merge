@@ -1,0 +1,47 @@
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+ul li a{
+    height: 22rem;
+    width: 20rem;
+    border: 1px solid whitesmoke;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color:#e72729
+}
+li a:hover{
+  opacity:0.8;
+  cursor: pointer;
+}
+
+.fnam{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+.favourite{
+    float: right;
+    margin-right:1rem;
+}
+.favourite.not{
+    color: black;
+   
+    
+}
+.item-prod{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5rem;
+    color: grey;
+}
+.price{
+    color:green;
+    margin-top: .5rem;
+}   

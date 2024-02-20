@@ -1,0 +1,13 @@
+div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div a{
+    
+    padding: 20px;
+    margin: .2rem .15rem;
+    text-decoration: none;
+    color: grey;
+
+}

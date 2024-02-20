@@ -1,0 +1,26 @@
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+   .form{
+    
+    width:20rem;
+   height:2.2rem;
+   outline:none;
+   border-radius:10rem 0 0 10rem;
+   text-align: center;
+   }
+}
+.btn{
+    border:1px solid black;
+    height:2.2rem;
+    border-color: blue;
+    border-radius:0 10rem 10rem 0;
+}
+.btn:hover{
+    background-color: red;
+    cursor: pointer;
+}

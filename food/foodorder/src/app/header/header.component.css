@@ -1,0 +1,19 @@
+.img-header {
+    display: flex;
+    align-items: center;
+  }
+  ul  {
+    list-style-type: none;
+  }
+  .nav-link{
+    display:inline;
+   text-decoration: none;
+   margin-right: 12px;
+   list-style-type: none;
+
+  }
+  .nav-item{
+    cursor: pointer;
+  }
+
+  

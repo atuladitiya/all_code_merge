@@ -1,0 +1,39 @@
+<div class="container">
+
+
+  
+    <div class="img">
+        <img [src]="food.imageUrl" [alt]="food.name"> 
+      </div>
+    
+      <div class="details">
+        <div class="header">
+          <span class="name">
+            {{food.name}}
+            
+          </span>
+          <span class="favourite {{food.favourite?'':'not'}}"> &hearts;</span>
+          </div>
+          
+        <div class="star">
+          <span *ngFor="let star of getStarArray(food.stars)" class="star">&#9733;</span>  
+        </div>
+        <div class="origins">     
+          <span>   
+            {{food.origins}}            
+          </span>     
+        </div>
+        <div class="cooktime">       
+          <span> Time to cook food is<b> 10-15 minutes </b></span>
+        </div>
+        <div class="price"> 
+          <span>Rs {{food.price}}</span>
+        </div>
+        <button class="ctn" (click)="addToCart()">Add To Cart</button>
+      
+      </div>
+      
+
+    </div>
+    
+    

@@ -1,0 +1,35 @@
+<app-search></app-search>
+<app-tags></app-tags>
+<ul>
+    <li *ngFor="let food of Foodlist">
+        <a routerLink="/food/{{food.id}}">
+        <img src="{{food.imageUrl}}"> 
+        <div class="content">
+            <div class="fnam">
+                {{food.name}}
+            </div>
+            <span class="favourite {{food.favourite?'':'not'}}"> &hearts;</span>
+            <div class="star">
+            <span *ngFor="let star of getStarArray(food.stars)" class="star">&#9733;</span>
+        </div>
+            <div class="item-prod">
+                <span>
+                    {{food.origins}}
+                </span>
+                <div class="time">
+                    <span>&#x23F0;</span>
+                    {{food.cookTime}}
+                </div>
+            </div>
+            
+            <div class="price">
+                <span></span>
+               Rs {{food.price}}
+                
+
+            </div>
+
+       </div>
+    </a>
+    </li>
+</ul>

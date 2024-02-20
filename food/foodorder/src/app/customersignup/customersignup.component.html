@@ -1,0 +1,52 @@
+<div class="seller-auth">
+    <div *ngIf="!showLogin" class="signup">
+        <h1> Customer Sign Up</h1>
+<form #SellerSignUp="ngForm" (ngSubmit)="signup(SellerSignUp.value)">
+    <div class="mb-3">
+      <label for="exampleInputName" class="form-label">Your Name</label>
+      <input  type="name" ngModel name="name" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" ngModel name="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Your Email</label>
+        <input  type="email" ngModel name="email" class="form-control" id="exampleInputEmail1">
+      </div>
+    <div class="mb-3 form-check">
+      <input  type="checkbox" ngModel name="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+    <a class="auth-toggle-link" (click)="openLogin()"> Already Have An Account? Click To Login </a>
+  </form>
+</div>
+<!---Login Area-->
+
+<div *ngIf="showLogin" class="login">
+  <div class="login-heading">
+  <h1> Customer Login</h1>
+  <p class="error"> {{authError}}</p>
+</div>
+<form #SellerLogin="ngForm" (ngSubmit)="Login(SellerLogin.value)">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Your Email</label>
+    <input  type="email" ngModel name="email" class="form-control" id="exampleInputEmail1">
+  </div>
+<div class="mb-3">
+<label for="exampleInputPassword1" class="form-label">Password</label>
+<input type="password" ngModel name="password" class="form-control" id="exampleInputPassword1">
+</div>
+
+<div class="mb-3 form-check">
+<input  type="checkbox" ngModel name="checkbox" class="form-check-input" id="exampleCheck1">
+<label class="form-check-label" for="exampleCheck1">Check me out</label>
+</div>
+<button type="submit" class="btn btn-primary">Login</button>
+<a class="auth-toggle-link" (click)="openSignUp()"> Don'ty hae an account? Click To Sign Up </a>
+
+</form>
+</div>
+</div>

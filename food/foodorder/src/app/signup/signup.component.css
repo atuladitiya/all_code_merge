@@ -1,0 +1,42 @@
+h1{
+    text-align: center;
+
+    
+}
+.seller-auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .signup {
+    width: 50%;
+  }
+  
+  .form-control {
+    width: 100%;
+  }
+  .seller-auth{
+    background-image: url('/assets/bg.jpg');
+    background-size: cover;
+    opacity: 0.86;
+  }
+  .auth-toggle-link{
+    margin-top: 20px;
+    color:black;
+    cursor: pointer;
+
+  }
+  .form-label  {
+    padding: 10px;
+    margin-top: 5px;
+  }
+  .error{
+    color: black;
+    text-align: center;
+    padding:10px;
+  }
+
+    
+  
